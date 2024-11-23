@@ -1,3 +1,11 @@
+import { LiaDownloadSolid } from "react-icons/lia";
+import { BsArrowRight } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+
+
+
+
 const Hero = () => {
     return (
         <section className="py-10 bg-white sm:py-16 lg:py-24">
@@ -14,18 +22,42 @@ const Hero = () => {
 
         <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10">
             <div>
-                <img className="w-full mx-auto sm:max-w-xs" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/2/business-man.jpg" alt="" />
+                <img className="w-full mx-auto sm:max-w-xs lg:rounded-2xl" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/2/business-man.jpg" alt="" />
             </div>
 
             <div>
                 <h3 className="text-lg font-semibold text-gray-900">Hello! I am Sandile M'remi.</h3>
+                <p>A full stack developer</p>
                 <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Download CV 
+                    <span>
+                        <LiaDownloadSolid />
+                    </span>
                    
                 </button>
 
                 <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Contact Info
+                    <span>
+                    <BsArrowRight />
+                    </span>
                    
                 </button>
+
+                <div className="text-4xl grid grid-cols-1">
+
+
+                <a href="" className="">
+                    <FaLinkedin />
+
+                </a>
+
+                <a href="">
+                    <FaGithubSquare />
+                </a>
+                </div>
+
+
+
+
 
                 {/* <p className="mt-4 text-lg text-gray-700">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <p className="mt-4 text-lg text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
