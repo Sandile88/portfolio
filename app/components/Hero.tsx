@@ -3,8 +3,14 @@ import { LiaDownloadSolid } from "react-icons/lia";
 import { BsArrowRight } from "react-icons/bs";
 import { FaEnvelope, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
+
 
 const Hero = () => {
+
+
+const profileImageUrl = "/api/placeholder/200/200"; // Replace this with your actual hosted image URL
+
   return (
     <section className="min-h-screen pt-20 pb-12 bg-white sm:pt-24 lg:pt-32">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -31,14 +37,14 @@ const Hero = () => {
 
           {/* left col*/}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <div className="relative w-40 h-40 lg:w-48 lg:h-48 mb-4 overflow-hidden rounded-2xl">
+            <div className="relative w-20 h-20 lg:w-24 lg:h-24 mb-4 overflow-hidden rounded-2xl">
               <img
                 className="object-cover w-full h-full"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/team/2/business-man.jpg"
                 alt="Sandile M'remi"
               />
             </div>
-            <h3 className="text-3xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-6xl font-medium text-gray-900 mb-2">
              {` Hello! I am Sandile M'remi.`}
             </h3>
           </div>
