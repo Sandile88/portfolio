@@ -10,10 +10,10 @@ const Hero = () => {
         {/* subheader sec */}
         <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl mb-6">
-            I am passionate about turning
+            {`I am passionate about turning`}
             <span className="relative inline-block mx-2">
               <span className="absolute inline-block w-full h-2 bg-yellow-300 bottom-1.5"></span>
-              <span className="relative">ideas into code!</span>
+              <span className="relative">{`ideas into code!`}</span>
             </span>
           </h2>
           <button
@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-              Hello! I am Sandile M'remi.
+             {` Hello! I am Sandile M'remi.`}
             </h3>
           </div>
 
@@ -46,7 +46,7 @@ const Hero = () => {
           {/* right cols */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <p className="text-xl lg:text-2xl text-gray-700 mb-6">
-              A full stack developer based in Johannesburg, South Africa.
+             {` A full stack developer based in Johannesburg, South Africa.`}
             </p>
 
 
