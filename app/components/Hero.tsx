@@ -1,85 +1,99 @@
+"use client";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { BsArrowRight } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-
- 
-
+import { FaEnvelope, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const Hero = () => {
-    return (
-        <section className="py-10 bg-white sm:py-16 lg:py-24">
-    <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
-                I am passionate about turning
-                <span className="relative inline-block">
-                    <span className="absolute inline-block w-full h-2 bg-yellow-300 bottom-1.5"></span>
-                    <span className="relative"> ideas into code! </span>
-                </span>
-            </h2>
-            <button type="button" className="mt-4 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Explore my Work
-                    <span>
-                        <BsArrowRight />
-                    </span>
-                   
-                </button>
+  return (
+    <section className="min-h-screen pt-20 pb-12 bg-white sm:pt-24 lg:pt-32">
+      <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+        {/* subheader sec */}
+        <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl mb-6">
+            I am passionate about turning
+            <span className="relative inline-block mx-2">
+              <span className="absolute inline-block w-full h-2 bg-yellow-300 bottom-1.5"></span>
+              <span className="relative">ideas into code!</span>
+            </span>
+          </h2>
+          <button
+            type="button"
+            className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white transition-colors duration-200 bg-gray-800 rounded-full hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          >
+            Explore my Work
+            <BsArrowRight className="ml-2 w-4 h-4" />
+          </button>
         </div>
 
-        <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10">
-            <div>
-                <img className="w-full mx-auto sm:max-w-xs lg:rounded-2xl" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/2/business-man.jpg" alt="" />
-                <h3 className="text-lg font-semibold text-gray-900 ">Hello! I am Sandile M'remi.</h3>
+        {/* main content grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
+          {/* left col*/}
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+            <div className="relative w-40 h-40 lg:w-48 lg:h-48 mb-4 overflow-hidden rounded-2xl">
+              <img
+                className="object-cover w-full h-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/team/2/business-man.jpg"
+                alt="Sandile M'remi"
+              />
             </div>
-            
-
-            <div>
-                {/* <h3 className="text-lg font-semibold text-gray-900">Hello! I am Sandile M'remi.</h3> */}
-                <p>A full stack developer based in Johannesburg, South Africa.</p>
-                <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Download CV 
-                    <span>
-                        <LiaDownloadSolid />
-                    </span>
-                   
-                </button>
-
-                <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Get in Touch
-                    <span>
-                    <FaEnvelope />
-                    </span>
-                   
-                </button>
-
-                <div className="text-4xl grid grid-cols-1">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+              Hello! I am Sandile M'remi.
+            </h3>
+          </div>
 
 
-                <a href="www.linkedin.com/in/sandile-m-remi" className="">
-                    <FaLinkedin />
-
-                </a>
-
-                <a href="https://github.com/Sandile88">
-                    <FaGithubSquare />
-                </a>
-                </div>
+          {/* right cols */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+            <p className="text-xl lg:text-2xl text-gray-700 mb-6">
+              A full stack developer based in Johannesburg, South Africa.
+            </p>
 
 
+            <div className="flex flex-wrap gap-4 mb-6 justify-center lg:justify-start">
+              <button
+                type="button"
+                className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200"
+              >
+                Download CV
+                <LiaDownloadSolid className="ml-2 w-5 h-5" />
+              </button>
 
-
-
-                {/* <p className="mt-4 text-lg text-gray-700">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <p className="mt-4 text-lg text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                <h3 className="mt-8 text-lg font-semibold text-gray-900">How do I do this without any investment?</h3>
-                <p className="mt-4 text-lg text-gray-700">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
+              <button
+                type="button"
+                className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200"
+              >
+                Get in Touch
+                <FaEnvelope className="ml-2 w-4 h-4" />
+              </button>
             </div>
+
+
+            <div className="flex gap-6 text-4xl">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                aria-label="LinkedIn Profile"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                aria-label="GitHub Profile"
+              >
+                <FaGithubSquare />
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
