@@ -2,6 +2,7 @@
 import { LiaDownloadSolid } from "react-icons/lia";
 import { BsArrowRight } from "react-icons/bs";
 import { FaEnvelope, FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -18,8 +19,8 @@ const Hero = () => {
           </h2>
           <button
             type="button"
-            className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white transition-colors duration-200 bg-gray-800 rounded-full hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-          >
+            className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+            >
             Explore my Work
             <BsArrowRight className="ml-2 w-4 h-4" />
           </button>
@@ -37,7 +38,7 @@ const Hero = () => {
                 alt="Sandile M'remi"
               />
             </div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-3xl font-semibold text-gray-900 mb-2">
              {` Hello! I am Sandile M'remi.`}
             </h3>
           </div>
@@ -51,30 +52,30 @@ const Hero = () => {
 
 
             <div className="flex flex-wrap gap-4 mb-6 justify-center lg:justify-start">
-              <button
-                type="button"
-                className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200"
+              <a
+              href="/Sandile_M'remi_CV.pdf"
+              download
+                className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
               >
                 Download CV
                 <LiaDownloadSolid className="ml-2 w-5 h-5" />
-              </button>
+              </a>
 
-              <button
-                type="button"
-                className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200"
-              >
+              <Link href={''}
+                className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+                >
                 Get in Touch
                 <FaEnvelope className="ml-2 w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
 
-            <div className="flex gap-6 text-4xl">
+            <div className="flex gap-6 text-4xl ">
               <a
                 href="https://www.linkedin.com/in/sandile-m-remi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer "
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin />
@@ -83,7 +84,7 @@ const Hero = () => {
                 href="https://github.com/Sandile88"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
                 aria-label="GitHub Profile"
               >
                 <FaGithubSquare />
