@@ -71,7 +71,7 @@ const Hero = () => {
 
             <div className="flex gap-6 text-4xl">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/sandile-m-remi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
@@ -80,7 +80,7 @@ const Hero = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Sandile88"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
