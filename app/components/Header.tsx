@@ -73,7 +73,7 @@ const Header = () => {
                     {/* desktop nav */}
                     <div className="hidden lg:flex lg:items-center lg:mx-auto lg:space-x-10">
                         <NavLink href="#" text="About" />
-                        <NavLink href="#" text="Tech Stack" />
+                        <NavLink href="#" text="Skills" />
                         <NavLink href="#" text="Projects" />
                         <NavLink href="#" text="Contact" />
                     </div>
@@ -83,7 +83,7 @@ const Header = () => {
                 <nav className={`lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                     <div className="py-4 bg-white rounded-lg shadow-lg">
                         <a href="#" className="block px-4 py-2 text-base font-medium text-black transition-all duration-200 hover:bg-gray-100">About</a>
-                        <a href="#" className="block px-4 py-2 text-base font-medium text-black transition-all duration-200 hover:bg-gray-100">Tech Stack</a>
+                        <a href="#" className="block px-4 py-2 text-base font-medium text-black transition-all duration-200 hover:bg-gray-100">Skills</a>
                         <a href="#" className="block px-4 py-2 text-base font-medium text-black transition-all duration-200 hover:bg-gray-100">Projects</a>
                         <a href="#" className="block px-4 py-2 text-base font-medium text-black transition-all duration-200 hover:bg-gray-100">Contact</a>
                     </div>
