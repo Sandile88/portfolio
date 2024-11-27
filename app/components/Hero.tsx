@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen pt-20 pb-12 bg-white sm:pt-24 lg:pt-32">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
-        {/* subheader sec */}
+        
         <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl mb-6">
             {`I am passionate about turning`}
