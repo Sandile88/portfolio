@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
         <section className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl bg-white font-[sans-serif]">
-            <div>
+            <div className="mt-12">
                 <h1 className="text-gray-800 text-3xl font-extrabold">Questions or Ideas?
                     <h3>Let's chat</h3>
                 </h1>
@@ -20,7 +20,7 @@ const Contact = () => {
                                 </svg>
                             </div>
                             <a href="javascript:void(0)" className="text-[#007bff] text-sm ml-4">
-                                <small className="block">Mail</small>
+                                <small className="block">Mail me at</small>
                                 <strong>sandilep.mremi@gmail.com</strong>
                             </a>
                         </li>
