@@ -11,7 +11,7 @@ interface SkillsDataProps {
 const SkillItem: React.FC<SkillsDataProps> = ({ skill, index }) => {
     return (
         <li
-        className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+        className="bg-white border:black rounded-xl px-5 py-3"
         key={index}>
         {skill}
       </li>
