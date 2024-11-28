@@ -10,10 +10,10 @@ const Contact = () => {
                             Questions or Ideas?
                         </h1>
                         <h2 className="text-2xl font-semibold text-blue-600">
-                            Let's chat
+                            {`Let's chat`}
                         </h2>
                         <p className="text-gray-600 mt-4">
-                            If you have any inquiries or wish to discuss a project, feel free to reach out.
+                            {`If you have any inquiries or wish to discuss a project, feel free to reach out.`}
                         </p>
                     </div>
 
@@ -31,7 +31,7 @@ const Contact = () => {
                             <div className="ml-4">
                                 <p className="text-sm text-gray-500">Mail me at</p>
                                 <a href="mailto:sandilep.mremi@gmail.com" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                                    sandilep.mremi@gmail.com
+                                    {`sandilep.mremi@gmail.com`}
                                 </a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                     
                     <button
                         type="button"
-                        className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200"
+                        className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200"
                     >
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
