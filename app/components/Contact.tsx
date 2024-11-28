@@ -2,10 +2,11 @@ const Contact = () => {
     return (
         <section className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl bg-white font-[sans-serif]">
             <div className="mt-12">
-                <h1 className="text-gray-800 text-3xl font-extrabold">Questions or Ideas?
-                    <h3>Let's chat</h3>
+                <h1 className="text-gray-800 text-3xl font-extrabold">{`Questions or Ideas?`}
                 </h1>
-                <p className="text-sm text-gray-500 mt-4">If you have any inquiries or wish to discuss a project, feel free to reach out.</p>
+                <h2 className="text-2xl">{`Let's chat`}</h2>
+
+                <p className="text-sm text-gray-500 mt-4">{`If you have any inquiries or wish to discuss a project, feel free to reach out.`}</p>
 
                 <div className="mt-12">
                     <h2 className="text-gray-800 text-base font-bold">Email</h2>
@@ -21,7 +22,7 @@ const Contact = () => {
                             </div>
                             <a href="javascript:void(0)" className="text-[#007bff] text-sm ml-4">
                                 <small className="block">Mail me at</small>
-                                <strong>sandilep.mremi@gmail.com</strong>
+                                <strong>{`sandilep.mremi@gmail.com`}</strong>
                             </a>
                         </li>
                     </ul>
@@ -40,7 +41,7 @@ const Contact = () => {
                   <button type="button"
                             className="mt-12 flex items-center justify-center text-sm lg:mr-auto max-lg:w-full px-4 py-3 tracking-wide group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' className="mr-2" viewBox="0 0 548.244 548.244">
-                                <path fill-rule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clip-rule="evenodd" data-original="#000000" />
+                                <path fillRule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clipRule="evenodd" data-original="#000000" />
                             </svg>
                             Send Message
                         </button>

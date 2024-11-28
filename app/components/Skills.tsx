@@ -1,30 +1,40 @@
-// import React from "react";
-// import { skillsData } from "@/lib/data";
+"use client";
 
-// interface skillDataProps (
-//     string skill;
-//     number index;
-// )
-// const skillsDataVar = React.FC<skillDataProps>()
+import React from "react";
+import { skillsData } from "@/lib/data";
 
-// const Skills = () => {
-//     return (
-//         <section>
-//             <ul>
-//                 {skillsData.map((skill, index) => {
-//                     <li
-//                         key={index}
-//                     >
-//                         {skill}
+interface SkillsDataProps {
+    skill: string;
+    index: number;
+}
 
-//                     </li>
-//                 })}
-//             </ul>
-//         </section>
+const SkillItem: React.FC<SkillsDataProps> = ({ skill, index }) => {
+    return (
+        <li
+        className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+        key={index}>
+        {skill}
+      </li>
+
+    );
+};
 
 
-//     )
-// }
+const Skills: React.FC = () => {
 
+  return (
+    <section
+      id="skills"
+      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+    >
+        <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+        {skillsData.map((skill, index) => (
+          <SkillItem skill={skill} index={index} key={index} />
+        ))}
+      </ul>
 
-// export default Skills;
+    </section>
+  );
+}
+
+export default Skills;
