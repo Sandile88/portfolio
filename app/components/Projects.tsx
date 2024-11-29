@@ -15,16 +15,16 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div id="projects" className="rounded-lg bg-white p-6 border transition-transform">
-      <h2 className="text-xl font-semibold text-gray-800 mb-3">{project.title}</h2>
-      <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
+    <div className="rounded-lg bg-white p-6 border border-amber-100 transition-transform hover:shadow-lg">
+      <h2 className="text-xl font-semibold text-neutral-800 mb-3">{project.title}</h2>
+      <p className="text-neutral-600 mb-4 text-sm">{project.description}</p>
       <div className="mb-6">
-        <h3 className="text-sm font-medium text-gray-700 mb-2">Tech Stack:</h3>
+        <h3 className="text-sm font-medium text-neutral-700 mb-2">Tech Stack:</h3>
         <div className="flex flex-wrap gap-2">
           {project.techStack.map((tech, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-700"
+              className="px-3 py-1 bg-amber-50 rounded-full text-xs text-neutral-700"
             >
               {tech}
             </span>
@@ -36,8 +36,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
-          >
+          className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-amber-700 rounded-full hover:bg-amber-800 transition-colors duration-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer"
+        >
           Github
         </a>
       </div>
@@ -64,10 +64,10 @@ const projects: ProjectTypes[] = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16">
+    <section id="projects" className="py-16 bg-amber-50">
       <div className="container mx-auto px-4">
-        <p className="text-center text-lg text-gray-600">Browse My Recent</p>
-        <h1 className="mb-12 text-center text-4xl font-bold text-gray-800">Projects</h1>
+        <p className="text-center text-lg text-neutral-600">Browse My Recent</p>
+        <h1 className="mb-12 text-center text-4xl font-bold text-neutral-800">Projects</h1>
         
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 max-w-5xl mx-auto">
           {projects.map((project) => (

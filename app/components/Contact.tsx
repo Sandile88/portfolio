@@ -11,7 +11,7 @@ const Contact = () => {
                         <h1 className="text-gray-900 text-4xl font-extrabold">
                             Questions or Ideas?
                         </h1>
-                        <h2 className="text-2xl font-semibold text-blue-600">
+                        <h2 className="text-2xl font-semibold text-amber-700">
                             {`Let's chat`}
                         </h2>
                         <p className="text-gray-600 mt-4">
@@ -22,9 +22,9 @@ const Contact = () => {
                     <div className="pt-4">
                         <h2 className="text-gray-900 text-lg font-bold mb-4">Email</h2>
                         <div className="flex items-center group hover:transform hover:scale-105 transition-transform duration-200">
-                            <div className="bg-blue-100 h-12 w-12 rounded-full flex items-center justify-center shrink-0">
+                            <div className="bg-amber-100 h-12 w-12 rounded-full flex items-center justify-center shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    className="text-blue-600" viewBox="0 0 479.058 479.058">
+                                    className="text-amber-600" viewBox="0 0 479.058 479.058">
                                     <path
                                         d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
                                     />
@@ -32,7 +32,7 @@ const Contact = () => {
                             </div>
                             <div className="ml-4">
                                 <p className="text-sm text-gray-500">Mail me at</p>
-                                <a href="mailto:sandilep.mremi@gmail.com" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                                <a href="mailto:sandilep.mremi@gmail.com" className="text-amber-700 font-semibold hover:text-blue-700 transition-colors">
                                     {`sandilep.mremi@gmail.com`}
                                 </a>
                             </div>
@@ -46,29 +46,29 @@ const Contact = () => {
                         <input 
                             type="text" 
                             placeholder="Full Name"
-                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200"
+                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 transition-all duration-200"
                         />
                         <input 
                             type="email" 
                             placeholder="Email Address"
-                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200"
+                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 transition-all duration-200"
                         />
                         <input 
                             type="text" 
                             placeholder="Subject"
-                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200"
+                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 transition-all duration-200"
                         />
                         <textarea 
                             placeholder="Message" 
                             rows={6}
-                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 resize-none"
+                            className="w-full rounded-lg py-3 px-4 bg-white border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 transition-all duration-200 resize-none"
                         />
                     </div>
                     
                     <button
                         type="button"
                         
-                        className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 duration-200 transition-colors utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+                        className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-amber-700 rounded-full hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 duration-200 transition-colors utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
                     >
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
