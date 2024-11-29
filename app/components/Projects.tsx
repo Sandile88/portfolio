@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="rounded-lg bg-white p-6 border transition-transform hover:scale-105">
+    <div id="projects" className="rounded-lg bg-white p-6 border transition-transform hover:scale-105">
       <h2 className="text-xl font-semibold text-gray-800 mb-3">{project.title}</h2>
       <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
       <div className="mb-6">

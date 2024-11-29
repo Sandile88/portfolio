@@ -12,7 +12,7 @@ const Hero = () => {
   const profileImageUrl = "https://res.cloudinary.com/dyfc8prpv/image/upload/v1732467342/IMG_2782_1_eknrwx.jpg";
 
   return (
-    <section className="min-h-screen pt-20 pb-12 bg-white sm:pt-24 lg:pt-32">
+    <section id="about" className="min-h-screen pt-20 pb-12 bg-white sm:pt-24 lg:pt-32">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
         
         <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">

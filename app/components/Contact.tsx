@@ -2,7 +2,7 @@
 
 const Contact = () => {
     return (
-        <section className="min-h-screen flex items-center justify-center py-12 px-4 bg-gray-50">
+        <section id="contact" className="min-h-screen flex items-center justify-center py-12 px-4 bg-gray-50">
             <div className="w-full max-w-5xl p-8 mx-auto grid sm:grid-cols-2 gap-12 items-start">
                 
                 {/* contact info */}
