@@ -50,7 +50,7 @@ const Header = () => {
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 
-            ${hasScrolled ? 'bg-transparent backdrop-blur-sm' : 'bg-white'}`}>
+            ${hasScrolled ? 'bg-transparent backdrop-blur-sm' : 'bg-amber'}`}>
             <div className="px-4 mx-auto max-w-2xl sm:px-6 lg:px-8">
                 <nav className="relative flex items-center justify-between h-16 transition-all lg:rounded-xl lg:shadow-lg lg:h-14 lg:px-8 lg:py-6">
                     <div className="flex items-center">
