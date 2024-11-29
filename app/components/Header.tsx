@@ -14,16 +14,18 @@ interface NavLinkProps {
 // inserted a navigationg link component with underline animation
 const NavLink: React.FC<NavLinkProps> = ({ href, text }) => {
     return (
-        <a 
-            href={href} 
-            className="relative text-base font-medium text-black transition-all duration-200 group"
-        >
-            {text}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-        </a>
+      <ScrollLink
+        to={href}
+        smooth={true}
+        duration={500}
+        className="relative text-base font-medium text-black transition-all duration-200 group" // Keep your existing styling
+      >
+        {text}
+        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+      </ScrollLink>
     );
-}
-
+  };
+  
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
