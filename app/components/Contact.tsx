@@ -1,10 +1,12 @@
+"use client"
+
 const Contact = () => {
     return (
         <section className="min-h-screen flex items-center justify-center py-12 px-4 bg-gray-50">
-            <div className="w-full max-w-5xl bg-white rounded-2xl shadow-lg p-8 mx-auto grid sm:grid-cols-2 gap-12 items-start">
+            <div className="w-full max-w-5xl p-8 mx-auto grid sm:grid-cols-2 gap-12 items-start">
                 
                 {/* contact info */}
-                <div className="space-y-8">
+                <div className="space-y-8 mt-14">
                     <div className="space-y-2">
                         <h1 className="text-gray-900 text-4xl font-extrabold">
                             Questions or Ideas?
@@ -65,7 +67,8 @@ const Contact = () => {
                     
                     <button
                         type="button"
-                        className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200"
+                        
+                        className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 duration-200 ransition-colors utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
                     >
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
