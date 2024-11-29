@@ -1,7 +1,7 @@
 export const skillsData = {
   frontend: {
     title: "Frontend Development",
-    skills: ["HTML", "CSS", "TypeScript", "React", "Next.js", "Tailwind"]
+    skills: ["HTML", "CSS", "TypeScript", "React", "Javascript", "Next.js", "Tailwind"]
   },
   backend: {
     title: "Backend Development",
