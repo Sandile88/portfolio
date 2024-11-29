@@ -5,7 +5,7 @@ export const skillsData = {
   },
   backend: {
     title: "Backend Development",
-    skills: ["Node.js", "Java", "Springboot", "Spring", "Python", "Flask", "PostgreSQL"]
+    skills: ["Node.js", "Java", "Springboot", "Spring", "Python", "Flask", "PostgreSQL", "REST APIs"]
   },
   blockchain: {
     title: "Web3 Development",
@@ -13,6 +13,7 @@ export const skillsData = {
   },
   tools: {
     title: "Development Tools",
-    skills: ["Git", "Vercel", "Github", "Gitlab", "VSCode", "Intellij", "Command Line", "Npm"]
+     skills: ["Git", "Vercel", "Github", "Gitlab", "VSCode", "Intellij", "Command Line", "Npm"]
   }
+
 } as const;

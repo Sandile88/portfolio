@@ -23,13 +23,14 @@ const Hero = () => {
               <span className="relative">{`ideas into code!`}</span>
             </span>
           </h2>
-          <button
-            type="button"
+          <a
+            // type="button"
+            href="https://github.com/Sandile88"
             className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
             >
             Explore my Work
             <BsArrowRight className="ml-2 w-4 h-4" />
-          </button>
+          </a>
         </div>
 
         {/* main content grid */}

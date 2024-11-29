@@ -7,7 +7,6 @@ interface ProjectTypes {
   description: string;
   techStack: string[];
   githubUrl: string;
-  demoUrl: string;
 }
 
 interface ProjectCardProps {
@@ -37,17 +36,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 rounded-md bg-gray-200 px-4 py-2 text-center text-gray-800 transition-colors hover:bg-gray-300"
-        >
+          className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+          >
           Github
-        </a>
-        <a
-          href={project.demoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 rounded-md bg-gray-200 px-4 py-2 text-center text-gray-800 transition-colors hover:bg-gray-300"
-        >
-          Live Demo
         </a>
       </div>
     </div>
@@ -60,16 +51,14 @@ const projects: ProjectTypes[] = [
     title: "Decentralized Password Manager",
     description: "A blockchain-based password manager that securely stores and manages passwords using smart contracts and decentralized technology.",
     techStack: ["Solidity", "Web3.js", "MetaMask", "Next.js", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/",
-    demoUrl: "https://github.com/",
+    githubUrl: "https://github.com/Sandile88/decentralized-password-manager"
   },
   {
     id: 2,
     title: "Healthcare Management Application",
     description: "A microservices-based healthcare management application designed to streamline patient information, appointment scheduling, doctor information, and medication tracking.",
     techStack: ["Java", "Spring Boot", "Microservices", "REST API"],
-    githubUrl: "https://github.com/",
-    demoUrl: "https://github.com/",
+    githubUrl: "https://github.com/Sandile88/HealthCareHub"
   },
 ];
 
@@ -88,10 +77,10 @@ const Projects = () => {
 
         <div className="mt-12 text-center">
           <a
-            href="https://github.com/YourGitHubUsername"
+            href="https://github.com/Sandile88"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors"
+            className="group inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700 transition-colors duration-200 utline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
             See More Projects
           </a>
