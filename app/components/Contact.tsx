@@ -146,9 +146,14 @@ const Contact = () => {
                             )}                            
                             <button
                             type="submit"
+                            disabled={isSubmitting}
                             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-amber-700 rounded-full hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 duration-200 transition-colors outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer"
                         >
-                            Send Message
+                            <span>
+                            {isSubmitting ? 'Sending...' : 'Send'}
+
+                            </span>
+                            {/* Send Message */}
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 width="16" 
